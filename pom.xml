@@ -152,6 +152,12 @@
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.62</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -176,11 +182,11 @@
         <version>9.4.9.v20180320</version>
         <configuration>
           <httpConnector>
-            <port>8888</port> <!-- 这里指定 jetty 服务的端口号 -->
+            <port>9999</port> <!-- 这里指定 jetty 服务的端口号 -->
           </httpConnector>
           <useTestClasspath>true</useTestClasspath>
           <webAppConfig>
-            <contextPath>/ssm_blog</contextPath> <!-- 这里指定在浏览器访问时，当前Web应用的根路径 -->
+            <contextPath>/blog_after</contextPath> <!-- 这里指定在浏览器访问时，当前Web应用的根路径 -->
           </webAppConfig>
         </configuration>
       </plugin>
